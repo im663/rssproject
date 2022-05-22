@@ -1,0 +1,24 @@
+{% extends 'base/main.html' %}
+{% load crispy_forms_tags %}
+{% block content %} 
+
+<!-- Having this block eliminates messages from being displayed that appeared on other forms -->
+{% if messages %}
+    {% for message in messages %}
+    {% endfor %}
+{% endif %}
+
+<!--Register--> 
+<h3>Register</h3>
+<fieldset id="register">
+	<form method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+
+        {{form|crispy}}
+
+		<button type="submit">Register</button>
+	</form>
+	<p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+</fieldset>
+
+{% endblock content %}

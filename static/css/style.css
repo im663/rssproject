@@ -1,0 +1,63 @@
+body {
+    max-width: 900px;
+    margin: auto;
+}
+
+nav {
+    padding: 3px;
+}
+
+.post-title {
+    text-decoration: none;
+    color: black;
+}
+
+.post-domain,
+.post-options {
+    font-size: 90%;
+    opacity: 85%;
+}
+
+.test-reply-container > .test-reply-container {
+    margin-left: 40px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.help-block, ul {
+    font-size: 8pt;
+}
+
+ul {
+    list-style: disclosure-closed;
+    margin: 0;
+    padding: 0 0px 0px 10px;
+}
+
+label.requiredField {
+    font-weight: bold;
+}
+
+.site-login {
+    float: right;
+}
+
+textarea {
+    width: 80%;
+}
+
+.story {
+    padding: 6px 0px;
+}
+
+.login a {
+    padding: 0px 6px;
+}
+
+.captcha {
+    display: block;
+}

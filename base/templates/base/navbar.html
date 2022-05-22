@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  {% load custom_tags %}
+  <nav>
+    <span><a class="site-home" href=
+    "/">{{settings.name}}</a></span> | <span><a class="site-home"
+    href="/about">about</a></span> | <span><a class="site-home"
+    href="/">search</a></span> | <!--
+        <small class="site-description">{{settings.description}}</small>
+        -->
+	<span class="login">
+	  {% if user.is_authenticated %}
+	  <a class= "site-home site-login" href="/logout">logout</a>
+	  <a class= "site-home site-login" href="/settings">settings</a>
+       {% else %}
+       <a class="site-home site-login" href="/login">login</a>
+       {% endif %}
+     </span>
+  </nav>
+</body>
+</html>
